@@ -1,0 +1,341 @@
+/* Home.css */
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Hero section */
+  .hero-section {
+    background-image: url('./H2.jpg'); /* Modify with your hero image path */
+    background-size: cover;
+    color: #cc0101;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 50px; /* Customize font size */
+    margin: 0;
+    color: wheat;
+    font-style: oblique;    
+  }
+  
+  .hero-section p {
+    font-size: 18px; /* Customize font size */
+    margin: 20px 0;
+  }
+  
+  .btn.btn-primary {
+    background-color: #fca311; /* Customize button background color */
+    color: #222; /* Customize button text color */
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn.btn-primary:hover {
+    background-color: #222; /* Customize button background color on hover */
+    color: #fca311; /* Customize button text color on hover */
+  }
+  
+  .about-section11 {
+    background-color: #ee0a56; /* Background color for the section */
+    color: #11fcf8;
+    padding: 20px; /* Add some padding to the section */
+    text-align: center; /* Center-align text within the section */
+  }
+  
+  .container {
+    max-width: 800px; /* Limit the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  h2 {
+    color: #333; /* Color for the heading text */
+    font-size: 28px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space between the heading and paragraphs */
+  }
+  
+  p {
+    color: #666; /* Color for paragraph text */
+    font-size: 16px; /* Font size for paragraphs */
+    line-height: 1.5; /* Line height for better readability */
+    margin-bottom: 20px; /* Space between paragraphs */
+  }
+  
+  
+  /* Skills section (Modified with Border Effect) */
+.skills-section {
+  background-color: #6ff5ee; /* Dark background color */
+  padding: 60px;
+  text-align: center;
+}
+
+.skills-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-section li {
+  margin: 0 20px 20px 0;
+  font-size: 20px;
+  color: #fca311; /* Skill text color */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #222; /* Skill background color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+  border: 2px solid #fca311; /* Border effect */
+}
+
+.skills-section li:hover {
+  background-color: #fca311; /* Change the background color on hover */
+  color: #222; /* Change the text color on hover */
+  border-color: #222; /* Change the border color on hover */
+}
+
+
+/* Portfolio section with a 3x3 grid and reduced gap */
+.portfolio-section {
+  background-color: #eeecec;
+  padding: 40px;
+  text-align: center;
+}
+
+.portfolio-section h2 {
+  font-size: 36px;
+  color: #fca311;
+  margin-bottom: 20px;
+}
+
+.portfolio-section .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 30px; /* Reduced gap between items */
+  justify-content: center;
+}
+
+.portfolio-section .col-md-6 {
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(252, 163, 17, 0.6);
+  text-align: center;
+  width: 350px; /* Adjusted width */
+  height: 350px; /* Adjusted height */
+  overflow: hidden;
+  position: relative;
+  transform: scale(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+  margin-bottom: -10px; /* Reduce margin to overlap with the next item */
+}
+
+.portfolio-section .col-md-6 img {
+  width: 100%;
+  height: 45%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease; /* Hover effect on image */
+}
+
+.project-title {
+  font-size: 24px;
+  color: #fca311;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.project-description12 {
+  color: #cc0101;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: #fca311;
+  color: #222;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #222;
+  color: #fca311;
+  transform: scale(1.05);
+}
+
+/* Hover effect on portfolio items */
+.portfolio-section .col-md-6:hover {
+  transform: scale(1.05); /* Scaling animation on hover */
+  box-shadow: 0 0 20px rgba(252, 163, 17, 0.9); /* Enhanced shadow on hover */
+}
+
+
+
+/* Blog section (Single Row with Fixed Dimensions and Animations) */
+.blog-section {
+  background-color: #333;
+  padding: 40px;
+  text-align: center;
+  color: red;
+}
+
+.blog-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fca311;
+}
+
+.blog-section .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a single-row grid */
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-section .col-md-6 {
+  background-color: #222;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(243, 3, 215, 0.8);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease;
+  cursor: pointer; /* Add pointer cursor on hover */
+  width: 300px; /* Fix width */
+  height: 380px; /* Fix height */
+}
+
+.blog-section .col-md-6:hover {
+  transform: scale(1.05);
+}
+
+.blog-section .col-md-6 img {
+  width: 100%;
+  height: 50%;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.2s ease;
+}
+
+.blog-section .col-md-6:hover img {
+  transform: scale(1.1);
+}
+
+.blog-section .blog-post-title {
+  font-size: 24px;
+  color: #6ffc11;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.blog-section .blog-post-excerpt {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #eb0808;
+}
+
+.blog-section .btn {
+  background-color: #11fcf8;
+  color: #222;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.blog-section .btn:hover {
+  background-color: #222;
+  color: #092ee6;
+}
+
+
+ /* Contact section (Styling Contact Form) */
+.contact-section {
+  background-color: #490642;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  color: #fca311;
+  margin-bottom: 20px;
+}
+
+.contact-section .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section form {
+  text-align: left;
+}
+
+.contact-section label {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.contact-section .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #fca311;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+  color: #fca311;
+}
+
+.contact-section .btn {
+  background-color: #fca311;
+  color: #222;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-section .btn:hover {
+  background-color: #222;
+  color: #fca311;
+}
+
+  /* Add your custom CSS rules as needed */
+  
+  

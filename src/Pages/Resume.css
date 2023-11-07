@@ -1,0 +1,219 @@
+/* Overall page styles */
+.resume {
+  background: linear-gradient(135deg, #3494E6, #EC6EAD);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 20px auto; /* Add margin to create space at the top */
+}
+
+/* Header section styles */
+header {
+  animation: fadeIn 2s;
+  
+  
+}
+
+h1 {
+  font-size: 36px;
+  font-family: 'Georgia', serif;
+  color: #0e0d0d;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #f2f2f2;
+  margin: 10px 0;
+}
+
+/* Contact Information section styles */
+.contact {
+  margin: 15px 0;
+  padding: 15px;
+  text-align: left;
+  background-color: burlywood;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.contact h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+contact p {
+  font-size: 16px;
+  color: #f2f2f2;
+  margin: 10px 0;
+}
+
+/* Professional Experience and Education sections styles */
+.professional-experience,
+.education {
+  animation: fadeIn 2s;
+  margin: 20px 0;
+  padding: 20px;
+  background: #0b0b0b;
+  color: #f1ecec;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 253, 253, 0.2);
+  text-align: left;
+}
+
+.professional-experience:hover, .education:hover {
+  background: #0e0e0e;
+}
+
+.professional-experience h2,
+.education h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #3494E6;
+  text-transform: uppercase;
+}
+
+.professional-experience h3,
+.education h3 {
+  font-size: 20px;
+  color: #f70ab4;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Improved link styling */
+a {
+  color: #3494E6;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #EC6EAD;
+  text-decoration: underline;
+}
+
+/* Download Button styling */
+.download-button {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  background: #EC6EAD;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Skills, Certificates, and Awards sections styles */
+.skills,
+.certificates,
+.awards {
+  animation: fadeIn 2s;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  color: #f70ab4;
+}
+
+.skills {
+  background: black;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.certificates {
+  background: #0b0b0b;
+  color: #e90a9b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.awards {
+  background: #3494E6;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills h2,
+.certificates h2,
+.awards
+ {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #e90a9b;
+}
+.awards {
+  background-color: #0b0b0b;
+}
+.awards h2{
+  color: #e90a9b;
+}
+ul {
+  list-style: square;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Improved link styling for Skills and Certificates */
+.skills a,
+.certificates a {
+  color: #3494E6;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+  font-weight: bold;
+}
+
+.skills a:hover,
+.certificates a:hover {
+  color: #EC6EAD;
+  text-decoration: underline;
+}
+
+/* Download Button styling */
+.download-button12 {
+ text-align: center;
+ margin: 20px 0px 0px 260px;
+}
+
+/* Keyframes for button hover animation */
+@keyframes buttonHover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the button hover animation */
+button:hover {
+  animation: buttonHover 0.5s;
+}

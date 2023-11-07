@@ -1,0 +1,39 @@
+/* Navbar.css */
+
+nav {
+  background-color: #222; /* Dark background color for the navigation bar */
+  color: #fff; /* Text color */
+  padding: 20px; /* Padding around the navigation bar */
+}
+
+ul {
+  list-style: none; /* Remove bullet points from the list */
+  padding: 0;
+  display: flex;
+  justify-content:space-evenly; /* Center-align the list items horizontally */
+}
+
+li {
+  margin: 0;
+}
+
+/* Style for the links */
+li a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #fff; /* Text color for the links */
+  padding: 0px 10px; /* Add padding to each link for spacing */
+  font-size: 18px; /* Font size for the links */
+  transition: color 0.3s ease; /* Add a smooth transition to the text color */
+
+  /* Hover effect */
+  &:hover {
+    color: #fca311; /* Change the text color on hover to a contrasting color */
+  }
+}
+
+/* Active link style (when the link is selected) */
+li a.active {
+  background-color: #fca311; /* Background color for the active link */
+  color: #222; /* Text color for the active link */
+  border-radius: 5px; /* Add rounded corners to the active link */
+}
