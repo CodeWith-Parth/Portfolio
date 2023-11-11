@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Resume.css'; // Import your CSS file
 
 const Resume = () => {
-  const [resume, setResume] = useState(null);
-
-  const handleUpload = (event) => {
-    const file = event.target.files[0];
-    setResume(file);
-  };
+  // Removed the unused 'resume' state
+  // const [resume, setResume] = useState(null);
 
   // Define the URL to your resume file
   const resumeURL = 'path/to/your-resume.pdf'; // Replace with the actual path to your resume file
